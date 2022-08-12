@@ -30,7 +30,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	
 	@Override
 	@Transactional
-	@PreAuthorize("hasRole('ROLE_ADMIN')")
+	// @PreAuthorize("hasRole('ROLE_ADMIN')")
 	public Usuario novoUsuario(String nome, String email, String senha,
 	        String autorizacao) {
 		Autorizacao aut = autorizacaoRepo.findByNome(autorizacao);

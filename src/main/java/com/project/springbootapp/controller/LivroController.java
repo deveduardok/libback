@@ -21,7 +21,7 @@ public class LivroController {
     private LivroService livroServ;
 
     @PostMapping(value = "/cadastrar")
-    public Livro cadastrarUsuario(@RequestBody LivroDTO livro){
+    public Livro cadastrarLivro(@RequestBody LivroDTO livro){
         return livroServ.criaLivro(livro.getTitulo(), livro.getAutor(), livro.getEditora(), livro.getAno());
     }
 
