@@ -1,3 +1,3 @@
 # Projeto Lib
-Para rodar: mvn spring-boot:run \
+Para rodar: mvn spring-boot:run 
 
